@@ -68,3 +68,31 @@ Curso para personal de FundaUngo  - El Salvador
 ## Sesión de aplicación
 
 Sesión orientada a la aplicación de STATA con problemas orientados a su cotidianiedad.
+
+
+# Bibliografía
+
+Acock, Alan C. 2014. A gentle introduction to Stata. 4th edition. College Station, Texas: A Stata Press Publication, StataCorp LP.
+
+Blossfeld, Hans-Peter, y Götz Rohwer. 2019. Event history analysis with Stata. Second edition. London ; New York: Routledge, Taylor & Francis Group.
+
+Gordon, Rachel A. 2015. Regression analysis for the social sciences. Second edition. New York: Routledge, Taylor & Francis Group.
+
+Jann, Ben. 2017. COEFPLOT: Stata module to plot regression coefficients and other results. Boston College Department of Economics.
+
+Long, J. Scott, y Jeremy Freese. 2001. Regression models for categorical outcomes using Stata. College Station, Texas: Stata Press.
+
+Rabe-Hesketh, S., y Anders Skrondal. 2012. Multilevel and longitudinal modeling using Stata. 3rd ed. College Station, Tex: Stata Press Publication.
+
+StataCorp LP. 2007. Stata multivariate statistics reference manual : release 10. Texas: College Station  Tex.}
+
+# Recursos en línea 
+
+https://stats.idre.ucla.edu/stata/
+https://data.princeton.edu/stata/
+https://www.youtube.com/channel/UCVk4G4nEtBS4tLOyHqustDA
+https://www.stata.com/bookstore/statacheatsheets.pdf
+
+
+
+
