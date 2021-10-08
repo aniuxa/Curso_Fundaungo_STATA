@@ -1,0 +1,196 @@
+---
+title: "Introducción a Stata 13"
+author: "Ana E."
+date: "Curso TeTra 25 sept 2017"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r, echo=FALSE, message=FALSE}
+require(knitr)
+statapath <- "C:/Program Files (x86)/Stata13/StataSE-64.exe"
+opts_chunk$set(engine="stata", engine.path=statapath, comment="")
+
+```
+##STATA y su pantalla
+
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata1.png" />
+
+Pero además utilizaremos otras pantallas. Una muy útil es la de el <b>do-file</b>. 
+Aquí copiamos los comandos para no olvidar lo que hemos hecho en nuestra base de datos y poderlo replicar. Documentar nuestro código es importante para la replicabilidad (de nosotros mismos y de los demás)
+
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata2.png" />
+
+Otra muy útil es la edición de datos, <b>"Edit"</b>.  Parece una hoja de Excel y podemos editar los datos directamente, capturales, ponerles nombre, etiquetarlos.
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata3.png" />
+
+<b>¡Tip!</b>
+Es muy útil usar en lugar de la edición, la de "Revisión" <b>"Browse"</b>. Se ve aparentemente igual. Pero sólo inspecciona y no cambia. Esto es útil, porque si editamos es mucho mejor hacerlo por comando para que quede claro qué hicimos con nuestra base de datos
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata4.png" />
+
+#STATA con comandos
+
+##STATA como una gran calculadora
+El comando más simple es comando "display", este comando nos presenta en la pantalla de resultados las operaciones que le pidamos.
+
+```{r}
+
+display  "hola"
+di 5+3
+di chi2(10, 85)
+
+```
+
+Pedir ayuda
+(Nota, con un asterisco los comandos no se vuelven de "chocolate")
+
+```{r}
+
+*help display
+
+*help chi2
+
+help operators
+```
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata5.png" />
+
+Los operadores son importantísimos porque nos ayudan a poner filtros y saber cómo "lee" nuestras indicaciones STATA
+
+
+## Usando bases de datos
+
+Puedes decargar la base de <a href="https://www.dropbox.com/sh/6ik3m33ngop98nx/AAA2bNQBlS1JUUYFeHEhdyOUa?dl=0">aquí</a>
+
+
+***** abrir una base de datos existente
+
+Podemos hacerlo una base de datos "manualmente" usando:
+  los botones de "abrir" 
+  File -> Open o
+  Los botones CTRL + O
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata6.png" />
+
+
+O podemos usar el comando "use", entre comillas debemos poner el nombre de la dirección correspondiente a nuestro archivo
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+describe
+browse
+bro
+
+```
+
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata7.png" />
+
+
+A veces es mucho más sencillo establecer un documento de trabajo, sobre todo cuando trabajo desde distintas computadoras
+```{r}
+
+cd "C:\Users\Aniux\Dropbox\Curso_teTra\datos"
+use sdemt217.dta, clear
+```
+
+## Comandos útiles de inspección de Bases de datos
+
+```{r}
+  use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+describe
+summarize
+
+*Estos dos comandos si no ponemos variables toman toda la base de datos. Si queremos para
+
+*Tip!, STATA entiende los comandos acortados, y podemos poner "su" en lugar de "summarize"
+
+su sex
+
+*¿Cómo sabemos hasta donde se acorta, ponemos help al comando y lo que esté subryado es qué tanto podemos abreviar
+
+
+*Podemos usar el asterisco para abreviar un listado de variables que empiezan igual, por ejemplo
+su clase*
+
+*Otra herramienta útil es el codebook, nos permite saber qué tipos de variables tenemos
+
+codebook clase*
+
+*En STATA, cada comando tiene "opciones", son parámetros que establecemos despues de la sintaxis normal del comando despues de una ","
+*En este caso, queremos escribir la versión compacta del codebook, escribimos después de la coma ", compact"
+
+codebook clase*, compact
+
+*También estas opciones se pueden abreviar
+
+codebook clase*, c
+
+```
+
+
+## Descriptivos sencillos
+
+Tabulados
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+
+tabulate sex
+tab sex 
+
+```
+
+##Gráficos
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+
+histogram anios_esc
+
+```
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata8.png" />
+
+## Generando variables
+
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+
+generate nueva_var=1
+
+generate nueva_var2=.
+
+replace nueva_var=nueva_var2
+replace nueva_var=1 if sex==2
+
+gen log_ing_hrs=log(ing_x_hrs)
+histogram log_ing_hrs, freq normal
+```
+<img src="C:/Users/Aniux/Dropbox/Capturas de pantalla/stata9.png" />
+
+## Transformación de variables
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+
+*De cadena a numérica
+
+destring eda, gen(edad2)
+destring eda, replace
+
+*De númerica a cadena
+encode est, gen(edo)
+```
+
+## Etiquetado de variables
+
+```{r}
+use "C:\Users\Aniux\Dropbox\Curso_teTra\datos\sdemt217.dta", clear
+
+destring sex, replace
+label var sex "Sexo del entrevistado"
+
+label define sexlabel 1 "Hombre" 2 "Mujer", modify
+
+label values sex sexlabel
+
+tab sex 
+tab sex, nolabel
+
+tab eda sex
+```
