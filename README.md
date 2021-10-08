@@ -1,6 +1,14 @@
 # Curso Uso de STATA para el análisis social
 
+Duración: 20 horas
+
+Imparte: Dra. Ana Escoto
+
 Curso para personal de FundaUngo  - El Salvador
+
+# Objetivo general:
+
+Ampliar las habilidades para el diseño y ejecución de la investigación social cuantitativa al personal de FundaUngo a través de la discusión de elementos teóricos y metodológicos, así como la puesta en práctica de ejemplos con información secundaria y su interpretación con el software STATA.
 
 # Sesión 1: 9 de octubre
 
