@@ -88,10 +88,10 @@ StataCorp LP. 2007. Stata multivariate statistics reference manual : release 1
 
 # Recursos en línea 
 
-https://stats.idre.ucla.edu/stata/
-https://data.princeton.edu/stata/
-https://www.youtube.com/channel/UCVk4G4nEtBS4tLOyHqustDA
-https://www.stata.com/bookstore/statacheatsheets.pdf
+* https://stats.idre.ucla.edu/stata/
+* https://data.princeton.edu/stata/
+* https://www.youtube.com/channel/UCVk4G4nEtBS4tLOyHqustDA
+* https://www.stata.com/bookstore/statacheatsheets.pdf
 
 
 
