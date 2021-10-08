@@ -2,7 +2,7 @@
 
 Curso para personal de FundaUngo  - El Salvador
 
-# Sesión 1
+# Sesión 1: 9 de octubre
 
 ## Introducción al programa
 
@@ -21,33 +21,50 @@ Curso para personal de FundaUngo  - El Salvador
  * Gráficas para variables cualitativas
  * Gráficos multivariados
 
-# Sesión 2
+# Sesión 2: 16 de Octubre
 
 ##  Estadística inferencial (3.5 horas)
 
-Intervalos de confianza para medias y proporciones
+* Intervalos de confianza para medias y proporciones
+* Pruebas de hipótesis para diferencia de medias y proporciones
+* Pruebas de igualdad de varianzas
+* Prueba chi-cuadrado
+* Prueba ANOVA
+* Prueba de Kruskal-Wallis
 
-Pruebas de hipótesis para diferencia de medias y proporciones
-Pruebas de igualdad de varianzas
-Prueba chi-cuadrado
-Prueba ANOVA
-Prueba de Kruskal-Wallis
+# Sesión 3: 23 de octubre
 
-4. Modelo de regresión lineal (3.5)
-Modelo de regresión simple
-Análisis de supuestos 
-Modelo de regresión lineal múltiple
-Análisis de supuestos
-Post-estimación y cálculo de efecto marginales
-Graficación y tabulados de modelos
-Extensión de modelos (efectos cuadráticos e interacciones)
-Uso de "lincom" y "nlcom"
-5. Extensiones de la regresión lineal y  regresión logística (3)
-Extensión de modelos (efectos cuadráticos e interacciones)
-Uso de "lincom" y "nlcom"
-Modelo de regresión logística e introducción a los modelos lineales generalizados
-Análisis de supuestos
-Post-estimación y cálculo de efecto marginales
-Graficación y tabulados de modelos
+## Modelo de regresión lineal (3.5 horas)
 
-6.  Taller de aplicación (3)
+* Modelo de regresión simple
+* Análisis de supuestos 
+* Modelo de regresión lineal múltiple
+* Análisis de supuestos
+* Post-estimación y cálculo de efecto marginales
+* Graficación y tabulados de modelos
+
+# Sesión4: 30 de octubre
+
+## Extensiones de la regresión lineal y  regresión logística (3 horas)
+
+* Extensión de modelos (efectos cuadráticos e interacciones)
+* Uso de "lincom" y "nlcom"
+* Modelo de regresión logística e introducción a los modelos lineales generalizados
+* Análisis de supuestos
+* Post-estimación y cálculo de efecto marginales
+* Graficación y tabulados de modelos
+
+# Sesión 5: 6 de noviembre
+
+## Introducción a la regresión de panel (3 horas)
+
+* Formato wide y long
+* Uso de contadores y atrición
+* Modelo de efectos fijos
+* Modelo de efectos aleatorios.
+
+#   Sesión 6:13 de noviembre 
+
+## Sesión de aplicación
+
+Sesión orientada a la aplicación de STATA con problemas orientados a su cotidianiedad.
