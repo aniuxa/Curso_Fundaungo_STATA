@@ -29,6 +29,8 @@ Ampliar las habilidades para el diseño y ejecución de la investigación social
  * Gráficas para variables cualitativas
  * Gráficos multivariados
 
+Material: [Práctica 1](D1.md).
+
 # Sesión 2: 16 de Octubre
 
 ##  Estadística inferencial (3.5 horas)
