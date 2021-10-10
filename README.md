@@ -29,7 +29,10 @@ Ampliar las habilidades para el diseño y ejecución de la investigación social
  * Gráficas para variables cualitativas
  * Gráficos multivariados
 
-Material: [Práctica 1](D1.md).
+Material: 
+* [Práctica 1](D1.md)
+* [Do-file1](dofiles/Sesion1.do)
+* [Video](https://www.dropbox.com/s/m8htqrtkdcm7zb6/FundaungoSTATA1.mp4?dl=0)
 
 # Sesión 2: 16 de Octubre
 
@@ -98,10 +101,10 @@ StataCorp LP. 2007. Stata multivariate statistics reference manual : release 1
 
 # Recursos en línea 
 
-* https://stats.idre.ucla.edu/stata/
-* https://data.princeton.edu/stata/
-* https://www.youtube.com/channel/UCVk4G4nEtBS4tLOyHqustDA
-* https://www.stata.com/bookstore/statacheatsheets.pdf
+* [https://stats.idre.ucla.edu/stata/](https://stats.idre.ucla.edu/stata/)
+* [https://data.princeton.edu/stata/](https://data.princeton.edu/stata/)
+* [Canal de YouTube de StataCorp](https://www.youtube.com/channel/UCVk4G4nEtBS4tLOyHqustDA)
+* [CheatSheets](https://www.stata.com/bookstore/statacheatsheets.pdf)
 
 
 
