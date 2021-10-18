@@ -1,6 +1,0 @@
-"0","library(Statamarkdown)"
-"2","Stata found at C:/Program Files/Stata17/StataMP-64.exe
-"
-"0","stataexe <- find_stata()"
-"0","  error=TRUE, cleanlog=TRUE, comment=NA)"
-"0",""
