@@ -49,6 +49,8 @@ Material:
 
 Material: 
 * [Práctica 2](D2.md)
+* [Do-file2](dofiles/Sesion2.do)
+* [Video](https://www.dropbox.com/s/tsoihi0uv99lvns/FundaungoSTATA2.mp4?dl=0)
 
 # Sesión 3: 23 de octubre
 
