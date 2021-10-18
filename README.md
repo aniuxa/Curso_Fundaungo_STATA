@@ -44,6 +44,11 @@ Material:
 * Prueba chi-cuadrado
 * Prueba ANOVA
 * Prueba de Kruskal-Wallis
+* Diseño muestral complejo
+
+
+Material: 
+* [Práctica 2](D2.md)
 
 # Sesión 3: 23 de octubre
 
