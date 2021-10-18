@@ -164,7 +164,6 @@ ci means r01b, poisson
 
 ```{stata, collectcode=TRUE}
 
-tab r104, gen(s_)
 ci proportion s_1 s_2
 ```
 
@@ -297,14 +296,14 @@ Me robo esta imagen de Moore(2010, p.729)
 ## Wilcoxon
 
 ```{stata, collectcode=TRUE}
-ranksum money if acptr2012==10, by(r104)
+ranksum money if actpr2012==10, by(r104)
 ```
 
 
 ## Kruskal-Wallis
 
 ```{stata, collectcode=TRUE}
-kwallis money if acptr2012==10, by(region)
+kwallis money if actpr2012==10, by(region)
 ```
 
 ## Correlaciones
@@ -312,7 +311,7 @@ kwallis money if acptr2012==10, by(region)
 Primero un gráfico:
 
 ```{stata, collectcode=TRUE}
-graph matrix money r106 aproba1 if acptr2012==10
+graph matrix money r106 aproba1 if actpr2012==10
 ```
 
 ![](images/matrix_corr.png)
@@ -331,7 +330,7 @@ También hay correlaciones "no paramétricas". Las más famosas son tau (para da
 
 
 ```{stata, collectcode=TRUE}
-spearman money r106 aproba1 if actpr2012==10, , stats(p)
+spearman money r106 aproba1 if actpr2012==10, stats(p)
 *ktau money r106 aproba1 if actpr2012==10, stats(p) // se tarda un montón
 ```
 
