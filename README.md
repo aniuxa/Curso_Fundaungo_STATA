@@ -63,6 +63,11 @@ Material:
 * Post-estimación y cálculo de efecto marginales
 * Graficación y tabulados de modelos
 
+
+Material: 
+* [Práctica 3](D3.md)
+
+
 # Sesión4: 30 de octubre
 
 ## Extensiones de la regresión lineal y  regresión logística (3 horas)
