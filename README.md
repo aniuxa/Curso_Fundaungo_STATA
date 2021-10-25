@@ -66,6 +66,8 @@ Material:
 
 Material: 
 * [Práctica 3](D3.md)
+* [Do-file3](dofiles/Sesion3.do)
+* [Video](https://www.dropbox.com/s/apc3gcibkgvweox/FundaungoSTATA3.mp4?dl=0)
 
 
 # Sesión4: 30 de octubre
