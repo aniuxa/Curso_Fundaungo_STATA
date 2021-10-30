@@ -86,7 +86,7 @@ Material:
 * [Práctica 4](D4.md)
 * [Do-file4](dofiles/Sesion4.do)
 * [Video](https://www.dropbox.com/s/75i8i67xobvibk5/FundaungoSTATA4.mp4?dl=0)
-* Excel con interaccioness (out/interacciones.xlsx)
+* [Excel con interacciones](out/interacciones.xlsx)
 
 # Sesión 5: 6 de noviembre
 
