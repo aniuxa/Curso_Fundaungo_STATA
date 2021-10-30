@@ -81,6 +81,10 @@ Material:
 * Post-estimación y cálculo de efecto marginales
 * Graficación y tabulados de modelos
 
+
+Material: 
+* [Práctica 4](D4.md)
+
 # Sesión 5: 6 de noviembre
 
 ## Introducción a la regresión de panel (3 horas)
