@@ -97,6 +97,10 @@ Material:
 * Modelo de efectos fijos
 * Modelo de efectos aleatorios.
 
+
+Material:  
+* [Práctica 5](D5.md)
+
 #   Sesión 6:13 de noviembre 
 
 ## Sesión de aplicación
