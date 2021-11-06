@@ -437,3 +437,5 @@ coefplot eff2, xline(0) scheme(plottig)
 graph export "images/eff2.png", replace width(1000)
 ```
 ![](images/eff2.png)
+
+Más de coefplot  y cómo poner los coeficientes <http://repec.sowi.unibe.ch/stata/coefplot/getting-started.html#h-4>
