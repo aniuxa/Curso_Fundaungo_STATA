@@ -100,6 +100,7 @@ Material:
 
 Material:  
 * [Práctica 5](D5.md)
+* [Do-file5](dofiles/Sesion5.do)
 
 #   Sesión 6:13 de noviembre 
 
