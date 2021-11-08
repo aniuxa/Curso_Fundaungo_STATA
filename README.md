@@ -101,6 +101,7 @@ Material:
 Material:  
 * [Práctica 5](D5.md)
 * [Do-file5](dofiles/Sesion5.do)
+* [Video](https://www.dropbox.com/s/ox7wfsuzq6k15v1/FundaungoSTATA5.mp4?dl=0)
 
 #   Sesión 6:13 de noviembre 
 
