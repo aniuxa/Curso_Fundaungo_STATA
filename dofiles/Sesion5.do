@@ -3,7 +3,7 @@
 * SESIÓN 5
 * CURSO STATA FUNDAUNGO
 * AUTORA: ANA ESCOTO
-* FECHA:30/10/2021 - última modificación: actualicé según la clase
+* FECHA: 06/11/2021 - última modificación: actualicé según la clase
 * -----------------------------------------------------------------------------
 * -----------------------------------------------------------------------------
 
@@ -11,17 +11,17 @@ capture log close // cierra cualquier log abierto
 set more off // Quita el boton de "more" en la ventana de resultados
 clear // cierra cualquier base de datos abierta
 
-* net install dm88_1.pkg
+* findit renvars
 
 * -----------------------------------------------------------------------------
 *  ESTABLECIENDO DIRECTORIOS 
 * -----------------------------------------------------------------------------
 
-gl computer "/Users/anaescoto/Dropbox/2021/Curso_Fundaungo_STATA"
-gl datos "$computer/datos"
-gl temp "$computer/datos/temp"
+gl computer "C:\Users\anaes\Dropbox\PC\Downloads\Curso_Fundaungo_STATA-main\Curso_Fundaungo_STATA-main\"
+gl datos "$computer\datos"
+gl temp "$computer\datos\temp"
 
-*cd "$computer\Curso_Fundaungo_STATA-main\Curso_Fundaungo_STATA-main\" 
+cd "$computer\" 
 
 log using "sesion5.log", replace
 
@@ -106,6 +106,7 @@ ttest egini_2021==egini_2011
 /* Para hacer este ejercicio más claro, vamos a botar algunas variables*/
 
 keep egini* pa* year*
+
 reshape long egini_ participación_, i(país pais2) j(onda)
 
 
@@ -114,6 +115,7 @@ reshape long egini_ participación_, i(país pais2) j(onda)
 * Queda todo con 2011. Tener cuidado
 
 reshape wide egini_ participación_, i(país pais2) j(onda)
+
 * -----------------------------------------------------------------------------
 *  Formato long
 * -----------------------------------------------------------------------------
@@ -188,7 +190,7 @@ esttab mco mco_dummies mco_areg, ar2 r2 se
 xtreg crecimientodelpib escolaridadpromedio, fe
 estimates store panel_fe
 
-esttab mco mco_dummies mco_areg panel_fe, ar2 r2 se
+esttab mco  mco_areg panel_fe, ar2 r2 se
 
 
 
@@ -206,9 +208,10 @@ xtreg crecimientodelpib escolaridadpromedio i.year , fe
 testparm i.year
 
 
-*** ¿MCO o FE?
+*** ¿MCO o RE?
 estimates restore panel_re
 xttest0
+* No rechazamos la H0, usamos MCO
 
 
 *** Verificando heterocedasticidad
@@ -220,6 +223,8 @@ xttest3
 xtreg crecimientodelpib escolaridadpromedio, fe robust
 estimates store fe_robust
 
+** Comparando.
+esttab panel_fe fe_robust, scalars(rho r2_b r2_o r2) se
 
 estimates restore panel_fe
 xttest2
