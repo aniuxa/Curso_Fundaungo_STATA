@@ -105,6 +105,9 @@ Material:
 
 #   Sesión 6:13 de noviembre 
 
+* [Do-file6](dofiles/Sesion6.do)
+
+
 ## Sesión de aplicación
 
 Sesión orientada a la aplicación de STATA con problemas orientados a su cotidianiedad.
