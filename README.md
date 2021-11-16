@@ -103,9 +103,15 @@ Material:
 * [Do-file5](dofiles/Sesion5.do)
 * [Video](https://www.dropbox.com/s/ox7wfsuzq6k15v1/FundaungoSTATA5.mp4?dl=0)
 
-#   Sesión 6:13 de noviembre 
+#   Sesión 6:13 de noviembre (3 horas)
 
+* Indices con escala de likert
+* Introducción al análisis de secuencias
+
+Material:
+* [Práctica 6](D6.md)
 * [Do-file6](dofiles/Sesion6.do)
+* [Video](https://www.dropbox.com/s/7mfgbz46h1jw60y/FundaungoSTATA6.mp4?dl=0)
 
 
 ## Sesión de aplicación
